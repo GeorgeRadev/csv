@@ -6,7 +6,7 @@ Requires JDK 1.4 or higher and junit.jar for tests
 
 #### CSV parsing
 ```java
-	CSVListener listener = new CSVListener(){
+CSVListener listener = new CSVListener(){
 	public void cell(String value) {
 		// new cell value was parsed
 	}
@@ -35,7 +35,8 @@ parser.parse(new StringReader(source), listener);
 ```
 
 Outputs: 
-```42,36028797018963967
+```
+42,36028797018963967
 "test
 test","test""test"
 ```
